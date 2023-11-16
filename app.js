@@ -10,12 +10,11 @@ function hasOddNumber(array) {
 // hasAZero
 // Write a function called hasAZero which accepts a number and returns true if that number contains at least one zero.
 // Otherwise, the function should return false
-// todo
 function hasAZero(number) {
   // return number.some(function(num){
   //     return num.indexOf(0) !== -1
   // })
-  return num
+  return number
     .toString()
     .split("")
     .some(function (val) {
@@ -35,7 +34,6 @@ function hasOnlyOddNumbers(array) {
 // hasNoDuplicates
 // Write a function called hasNoDuplicates which accepts an array and returns true if there are no duplicate values (more than one element
 // in the array that has the same value as another). If there are any duplicates, the function should return false.
-// todo
 function hasNoDuplicates(array) {
   return array.every(function (val) {
     return array.indexOf(val) === array.lastIndexOf(val);
